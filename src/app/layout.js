@@ -1,5 +1,5 @@
-import "./globals.css"
-import { poppins } from "@/components/ui/fonts";
+import "./globals.css";
+import { poppins } from "@/app/components/ui/fonts";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"), // change to production url
@@ -32,8 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`} >
-      {children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
